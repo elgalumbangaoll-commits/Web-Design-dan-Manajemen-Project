@@ -1,18 +1,22 @@
-<?php
-include 'class/Biodata.php';
+<body>
 
-$hasil = "";
+<div class="menu">
+  <a href="index.php">Form</a>
+  <a href="home.php">Home</a>
+  <a href="about.php">About</a>
+</div>
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
-    $phone = $_POST['phone'];
-    $address = $_POST['address'];
+<div class="container">
+  <form method="POST" action="class/Biodata.php">
+    <input type="text" name="firstname" placeholder="Firstname" required>
+    <input type="text" name="lastname" placeholder="Lastname" required>
+    <input type="text" name="phone" placeholder="Phone Number" required>
+    <textarea name="address" placeholder="Address" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
 
-    $data = new Biodata($firstname, $lastname, $phone, $address);
-    $hasil = $data->tampilkan();
-}
-?>
+</body>
 
 <!DOCTYPE html>
 <html>
