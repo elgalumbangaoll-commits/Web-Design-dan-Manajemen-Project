@@ -26,7 +26,7 @@
 </head>
 <body>
 
-<di class="container">
+<div class="container">
     <h1>Welcome to Our PHP Project</h1>
     <p>Ini adalah halaman utama</p>
 
@@ -34,7 +34,7 @@
     <a href="index.php">Home</a>
     <a href="form.php">Form</a>
     <a href="about.php">About</a>
-</di
+</div>
 
 </body>
 </html>
